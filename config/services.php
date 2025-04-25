@@ -18,12 +18,18 @@ return [
     ],
 
     // URL layanan UserService
+    // 'user_service' => [
+    //     'url' => env('USER_SERVICE_URL', 'http://user-service.test'),
+    // ],
     'user_service' => [
-        'url' => env('USER_SERVICE_URL', 'http://user-service.test'),
-    ],
+    'base_url' => env('USER_SERVICE_URL', 'http://localhost:8001'),
+    ],  
     
     // URL layanan OrderService
+    // 'order_service' => [
+    //     'url' => env('ORDER_SERVICE_URL', 'http://order-service.test'),
+    // ],
     'order_service' => [
-        'url' => env('ORDER_SERVICE_URL', 'http://order-service.test'),
+        'url' => env('ORDER_SERVICE_URL', 'http://localhost:8003'),
     ],
 ];
